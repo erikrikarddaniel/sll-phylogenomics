@@ -1,0 +1,32 @@
+sessionname phylogenomics
+setenv ROOT $PWD
+screen -t pfitmap
+screen -t server
+screen -t autotest
+screen -t jobserver
+chdir db
+screen -t psql 
+chdir ..
+chdir spec
+screen -t spec
+chdir ..
+chdir app
+chdir models
+screen -t models
+chdir ../controllers
+screen -t controllers
+chdir ../views
+screen -t views
+chdir $ROOT
+chdir config
+screen -t config
+chdir $ROOT/app/assets/stylesheets
+screen -t stylesheets
+chdir $ROOT/log
+screen -t log
+chdir $ROOT/db/migrate
+screen -t migrate
+chdir $ROOT
+screen -t man
+screen -t console
+screen -t root
